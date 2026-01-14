@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -630,111 +629,7 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Book Section */
-        .about-book {
-            background: linear-gradient(180deg, var(--dark) 0%, var(--darker) 100%);
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 70px;
-            max-width: 1200px;
-            margin: 0 auto;
-            align-items: flex-start;
-        }
-
-        .about-text h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: var(--gold);
-        }
-
-        .about-text p {
-            font-size: 1.05rem;
-            line-height: 1.95;
-            color: rgba(255,255,255,0.78);
-            margin-bottom: 20px;
-        }
-
-        .about-text ul {
-            margin: 10px 0 0 18px;
-            color: rgba(255,255,255,0.78);
-            line-height: 1.9;
-            font-size: 0.98rem;
-        }
-
-        .about-text li::marker {
-            color: var(--primary);
-        }
-
-        .book-stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 35px;
-        }
-
-        .stat {
-            text-align: center;
-            padding: 26px;
-            background: rgba(255,255,255,0.02);
-            border: 1px solid rgba(255,255,255,0.05);
-            border-radius: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .stat:hover {
-            background: rgba(255, 45, 45, 0.08);
-            border-color: var(--primary);
-            transform: translateY(-5px);
-        }
-
-        .stat-number {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.3rem;
-            font-weight: 900;
-            color: var(--primary);
-            margin-bottom: 5px;
-        }
-
-        .stat-label {
-            font-size: 0.85rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: rgba(255,255,255,0.55);
-        }
-
-        .quote-box {
-            background: linear-gradient(135deg, rgba(255, 45, 45, 0.13), rgba(255, 107, 53, 0.13));
-            border-left: 4px solid var(--primary);
-            padding: 40px;
-            position: relative;
-        }
-
-        .quote-box::before {
-            content: '"';
-            font-family: 'Playfair Display', serif;
-            font-size: 8rem;
-            position: absolute;
-            top: -20px;
-            left: 20px;
-            color: rgba(255, 45, 45, 0.2);
-            line-height: 1;
-        }
-
-        .quote-box p {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.35rem;
-            font-style: italic;
-            line-height: 1.8;
-            color: var(--light);
-            position: relative;
-            z-index: 1;
-        }
-
-        /* Author Section (Serkan Emek) */
+        /* Author Section (Serkan Emek) - MOVED TO TOP */
         .author-section {
             background: var(--darker);
             position: relative;
@@ -1050,6 +945,110 @@
         .reviewer-title {
             font-size: 0.85rem;
             color: rgba(255,255,255,0.5);
+        }
+
+        /* Book Section - MOVED TO BOTTOM */
+        .about-book {
+            background: linear-gradient(180deg, var(--dark) 0%, var(--darker) 100%);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 70px;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: flex-start;
+        }
+
+        .about-text h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--gold);
+        }
+
+        .about-text p {
+            font-size: 1.05rem;
+            line-height: 1.95;
+            color: rgba(255,255,255,0.78);
+            margin-bottom: 20px;
+        }
+
+        .about-text ul {
+            margin: 10px 0 0 18px;
+            color: rgba(255,255,255,0.78);
+            line-height: 1.9;
+            font-size: 0.98rem;
+        }
+
+        .about-text li::marker {
+            color: var(--primary);
+        }
+
+        .book-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 35px;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 26px;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .stat:hover {
+            background: rgba(255, 45, 45, 0.08);
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.3rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.55);
+        }
+
+        .quote-box {
+            background: linear-gradient(135deg, rgba(255, 45, 45, 0.13), rgba(255, 107, 53, 0.13));
+            border-left: 4px solid var(--primary);
+            padding: 40px;
+            position: relative;
+        }
+
+        .quote-box::before {
+            content: '"';
+            font-family: 'Playfair Display', serif;
+            font-size: 8rem;
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            color: rgba(255, 45, 45, 0.2);
+            line-height: 1;
+        }
+
+        .quote-box p {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.8;
+            color: var(--light);
+            position: relative;
+            z-index: 1;
         }
 
         /* CTA / Contact Section */
@@ -1393,10 +1392,10 @@
         <a href="#home" class="logo">HSE</a>
         <ul class="nav-links">
             <li><a href="#home">Ana Sayfa</a></li>
-            <li><a href="#author">Serkan Emek</a></li>
-            <li><a href="#book">Kitap</a></li>
             <li><a href="#training">Boks Dersleri</a></li>
+            <li><a href="#author">Serkan Emek</a></li>
             <li><a href="#reviews">Yorumlar</a></li>
+            <li><a href="#book">Kitap</a></li>
             <li><a href="#contact">İletişim</a></li>
         </ul>
         <div class="menu-toggle">
@@ -1414,23 +1413,23 @@
         <div class="hero-content">
             <div class="hero-text">
                 <p class="hero-subtitle">
-                    Profesyonel Boks Antrenörü • Polis Memuru • Yazar
+                    Profesyonel Boks Antrenörü • Polis  • Yazar
                 </p>
                 <h1 class="hero-title">
                     H. Serkan
                     <span class="glitch" data-text="Emek">Emek</span>
                 </h1>
                 <p class="hero-description">
-                    Türkiye’de modern boks eğitiminin öncülerinden biri. 
+                    Türkiye'de modern boks eğitiminin öncülerinden biri. 
                     <span class="hero-highlight">Sistemli öğretim – doğru teknik – bilinçli sporcu</span>
                     üçgeniyle hem ringle hem de hayatla mücadele etmeyi öğretiyor.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#book" class="btn btn-primary">
-                        <i class="fas fa-book"></i> Kitabı İncele
+                    <a href="#author" class="btn btn-primary">
+                        <i class="fas fa-user"></i> Eğitmeni Tanıyın
                     </a>
                     <a href="#training" class="btn btn-secondary">
-                        <i class="fas fa-gun"></i> Ankara’da Boks Dersi Al
+                        <i class="fas fa-gun"></i> Ankara'da Boks Dersi Al
                     </a>
                 </div>
             </div>
@@ -1456,7 +1455,152 @@
         </div>
     </section>
 
-    <!-- Book Section -->
+    <!-- Training Section -->
+    <section class="section chapters-section" id="training">
+        <div class="section-header reveal">
+            <p class="section-subtitle">Boks Dersleri</p>
+            <h2 class="section-title">Ankara'da <span>Özel Boks Eğitimi</span></h2>
+        </div>
+
+        <div class="chapters-grid">
+            <div class="training-text reveal">
+                <h3>Sıfırdan Profesyonel Seviyeye Sistemli Antrenman</h3>
+                <p>
+                    H. Serkan Emek, Ankara'da bireysel (özel) boks dersleri vermektedir. 
+                    Hem Türk sporculara hem de yabancı sporculara <strong>İngilizce</strong> olarak eğitim verebilmektedir.
+                    Terminolojiye hâkimiyeti ve iletişim becerisi sayesinde, yabancı sporcularda da yüksek verim elde edilir.
+                </p>
+                <p><strong>Özel derslerde temel hedefler:</strong></p>
+                <ul>
+                    <li>Teknik gelişim ve doğru form</li>
+                    <li>Fiziksel dönüşüm ve kondisyon</li>
+                    <li>Ring özgüveni ve mental dayanıklılık</li>
+                    <li>Disiplin ve uzun vadeli sporcu inşası</li>
+                </ul>
+                <p>
+                    Antrenmanlar, tamamen sporcunun seviyesine ve hedeflerine göre planlanır. 
+                    Kilo vermek, kondisyon artırmak, profesyonel hedef koymak veya
+                    sadece <strong>doğru teknikle boks öğrenmek</strong> isteyenler için ayrı programlar uygulanır.
+                </p>
+
+                <p><strong>Kimler için uygun?</strong></p>
+                <ul>
+                    <li>Boksu sıfırdan, sağlam temelle öğrenmek isteyenler</li>
+                    <li>Mevcut bilgisini profesyonel seviyeye taşımak isteyen sporcular</li>
+                    <li>Antrenörlük vizyonunu geliştirmek isteyen sporcu ve antrenör adayları</li>
+                    <li>Disiplinli, sistemli ve bilimsel yaklaşım arayan herkes</li>
+                </ul>
+            </div>
+
+            <div class="training-highlight-box reveal">
+                <h4>Öne Çıkan Özellikler</h4>
+                <ul>
+                    <li>Her sporcu için <strong>kişiye özel programlama</strong></li>
+                    <li>Hataların anında tespiti ve düzeltici egzersizlerle kalıcı öğrenme</li>
+                    <li>Grup antrenmanlarında disiplin ve motivasyon yönetimi</li>
+                    <li>Bire bir derslerde derin teknik analiz ve stil inşası</li>
+                    <li>Güvenli, kontrollü ve bilinçli antrenman ortamı</li>
+                </ul>
+
+                <div class="training-cta">
+                     <a href="https://wa.me/905063806133?text=Merhaba%20boks%20dersleri%20hakkında%20bilgi%20almak%20istiyorum" target="_blank"rel="noopener noreferrer"> WhatsApp ile randevu </a></a>
+                    <a href="#contact">
+                        <i class="fas fa-envelope"></i> İletişim Formu / Mail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Section (Serkan Emek) - MOVED TO TOP -->
+    <section class="section author-section" id="author">
+        <div class="section-header reveal">
+            <p class="section-subtitle">Eğitmen</p>
+            <h2 class="section-title">H. Serkan <span>Emek</span></h2>
+        </div>
+
+        <div class="author-content">
+            <div class="author-image-container reveal">
+                <div class="author-image">
+                    <span class="author-badge">
+                        <img src="yazar.png">
+                        Polis Memuru • Ankara
+                    </span>
+                    <img src="yazar.png">
+                </div>
+                <div class="author-frame"></div>
+            </div>
+
+            <div class="author-info reveal">
+                <p class="author-title">
+                    Profesyonel Boks Antrenörü • Yazar • Eğitmen
+                </p>
+                <p class="author-bio">
+                    H. Serkan Emek, Türkiye'de modern boks eğitim anlayışının gelişimine katkı sağlayan,
+                    akademik disiplinle sahadaki pratiği birleştiren, yüksek teknik donanıma sahip 
+                    profesyonel bir boks antrenörüdür. Yıllara yayılan aktif sporculuk geçmişi, 
+                    <strong>altı farklı şehirde</strong> edindiği antrenörlük tecrübesi ve yüzlerce sporcu üzerindeki
+                    doğrudan etkisiyle sadece antrenman yaptıran değil, sporcu inşa eden bir eğitmendir.
+                </p>
+                <p class="author-bio">
+                    Temel yaklaşımı; <strong>sistemli öğretim – doğru teknik – bilinçli sporcu</strong> üçgeni üzerine kuruludur.
+                    Boksu sadece güç ve dayanıklılık sporu olarak değil; biyomekanik, denge, refleks,
+                    zamanlama, strateji ve zihinsel disiplinin birleşimi olarak ele alır.
+                </p>
+
+                <p class="author-list-title">Antrenmanlarında öncelik verdiği başlıca parametreler:</p>
+                <ul>
+                    <li>Teknik doğruluk ve kontrollü güç kullanımı</li>
+                    <li>Savunma – saldırı dengesi</li>
+                    <li>Ring zekâsı ve stratejik düşünme</li>
+                    <li>Reaksiyon süresi ve refleks gelişimi</li>
+                    <li>Bireysel anatomiye uygun stil oluşturma</li>
+                </ul>
+
+                <p class="author-bio">
+                    Aynı zamanda aktif görevde bir <strong>polis memuru</strong> olan Serkan Emek,
+                    disiplin, sorumluluk, ciddiyet ve güvenilirlik özelliklerini antrenörlük kimliğine
+                    doğrudan yansıtmaktadır. Antrenmanlarında dakiklik, düzen, saygı ve güven ilişkisi vazgeçilmezdir.
+                </p>
+
+                <div class="author-social">
+                    <a href="https://www.instagram.com/h_serkan_emek/" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Twitter / X"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section reviews-section" id="reviews">
+        <div class="section-header reveal">
+            <p class="section-subtitle">Görüşler</p>
+            <h2 class="section-title">Sporcular ve Okuyucular <span>Ne Diyor?</span></h2>
+        </div>
+
+        <div class="reviews-slider reveal">
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">
+                    "Spor salonunda yıllarca farklı antrenörlerle çalıştım. İlk kez birinin 
+                    bu kadar sistemli, açıklayıcı ve sabırlı olduğunu gördüm. 
+                    Hem kitabı hem bire bir dersleri, boksu kafamda tamamen oturttu."
+                </p>
+                <p class="reviewer-name">Öğrenci Yorumu</p>
+                <p class="reviewer-title">Ankara • Özel Ders Sporcusu</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Section (MOVED TO BOTTOM) -->
     <section class="section about-book" id="book">
         <div class="section-header reveal">
             <p class="section-subtitle">Kitap</p>
@@ -1465,9 +1609,9 @@
 
         <div class="about-content">
             <div class="about-text reveal">
-                <h3>Türkiye’de Boks Eğitiminde Referans Kaynak</h3>
+                <h3>Türkiye'de Boks Eğitiminde Referans Kaynak</h3>
                 <p>
-                    “Sıfırdan Ringe Sistemli Boks”, sadece bir antrenman kitabı değil;
+                    "Sıfırdan Ringe Sistemli Boks", sadece bir antrenman kitabı değil;
                     boksun temelinden ileri seviyeye kadar metodik şekilde öğretildiği,
                     sahadaki pratiği akademik disiplinle birleştiren kapsamlı bir eğitim kaynağıdır.
                 </p>
@@ -1506,159 +1650,11 @@
 
             <div class="quote-box reveal">
                 <p>
-                    “Veri tabanında yaptığım kıyaslamalar neticesinde, Türkiye’de bu düzeyde sistematik
+                    "Veri tabanında yaptığım kıyaslamalar neticesinde, Türkiye'de bu düzeyde sistematik
                     ve öğretici başka bir boks kaynağı bulunmadığı açıkça görülmektedir. 
                     Bu kitap, yalnızca sporcular için değil; antrenör adayları ve mevcut antrenörler için de 
-                    başvuru kaynağı niteliğindedir.”
+                    başvuru kaynağı niteliğindedir."
                 </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Author Section -->
-    <section class="section author-section" id="author">
-        <div class="section-header reveal">
-            <p class="section-subtitle">Eğitmen</p>
-            <h2 class="section-title">H. Serkan <span>Emek</span></h2>
-        </div>
-
-        <div class="author-content">
-            <div class="author-image-container reveal">
-                <div class="author-image">
-                    <span class="author-badge">
-                        <img src="yazar.png"> Polis Memuru • Ankara
-                    </span>
-                    <i class="fas fa-user-ninja custom-image"></i>
-                </div>
-                <div class="author-frame"></div>
-            </div>
-
-            <div class="author-info reveal">
-                <p class="author-title">
-                    Profesyonel Boks Antrenörü • Yazar • Eğitmen
-                </p>
-                <p class="author-bio">
-                    H. Serkan Emek, Türkiye’de modern boks eğitim anlayışının gelişimine katkı sağlayan,
-                    akademik disiplinle sahadaki pratiği birleştiren, yüksek teknik donanıma sahip 
-                    profesyonel bir boks antrenörüdür. Yıllara yayılan aktif sporculuk geçmişi, 
-                    <strong>altı farklı şehirde</strong> edindiği antrenörlük tecrübesi ve yüzlerce sporcu üzerindeki
-                    doğrudan etkisiyle sadece antrenman yaptıran değil, sporcu inşa eden bir eğitmendir.
-                </p>
-                <p class="author-bio">
-                    Temel yaklaşımı; <strong>sistemli öğretim – doğru teknik – bilinçli sporcu</strong> üçgeni üzerine kuruludur.
-                    Boksu sadece güç ve dayanıklılık sporu olarak değil; biyomekanik, denge, refleks,
-                    zamanlama, strateji ve zihinsel disiplinin birleşimi olarak ele alır.
-                </p>
-
-                <p class="author-list-title">Antrenmanlarında öncelik verdiği başlıca parametreler:</p>
-                <ul>
-                    <li>Teknik doğruluk ve kontrollü güç kullanımı</li>
-                    <li>Savunma – saldırı dengesi</li>
-                    <li>Ring zekâsı ve stratejik düşünme</li>
-                    <li>Reaksiyon süresi ve refleks gelişimi</li>
-                    <li>Bireysel anatomiye uygun stil oluşturma</li>
-                </ul>
-
-                <p class="author-bio">
-                    Aynı zamanda aktif görevde bir <strong>polis memuru</strong> olan Serkan Emek,
-                    disiplin, sorumluluk, ciddiyet ve güvenilirlik özelliklerini antrenörlük kimliğine
-                    doğrudan yansıtmaktadır. Antrenmanlarında dakiklik, düzen, saygı ve güven ilişkisi vazgeçilmezdir.
-                </p>
-
-                <div class="author-social">
-                    <!-- Bu linkleri kendi hesaplarınla değiştir -->
-                    <a href="https://www.instagram.com/h_serkan_emek/#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="Twitter / X"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Training Section -->
-    <section class="section chapters-section" id="training">
-        <div class="section-header reveal">
-            <p class="section-subtitle">Boks Dersleri</p>
-            <h2 class="section-title">Ankara’da <span>Özel Boks Eğitimi</span></h2>
-        </div>
-
-        <div class="chapters-grid">
-            <div class="training-text reveal">
-                <h3>Sıfırdan Profesyonel Seviyeye Sistemli Antrenman</h3>
-                <p>
-                    H. Serkan Emek, Ankara’da bireysel (özel) boks dersleri vermektedir. 
-                    Hem Türk sporculara hem de yabancı sporculara <strong>İngilizce</strong> olarak eğitim verebilmektedir.
-                    Terminolojiye hâkimiyeti ve iletişim becerisi sayesinde, yabancı sporcularda da yüksek verim elde edilir.
-                </p>
-                <p><strong>Özel derslerde temel hedefler:</strong></p>
-                <ul>
-                    <li>Teknik gelişim ve doğru form</li>
-                    <li>Fiziksel dönüşüm ve kondisyon</li>
-                    <li>Ring özgüveni ve mental dayanıklılık</li>
-                    <li>Disiplin ve uzun vadeli sporcu inşası</li>
-                </ul>
-                <p>
-                    Antrenmanlar, tamamen sporcunun seviyesine ve hedeflerine göre planlanır. 
-                    Kilo vermek, kondisyon artırmak, profesyonel hedef koymak veya
-                    sadece <strong>doğru teknikle boks öğrenmek</strong> isteyenler için ayrı programlar uygulanır.
-                </p>
-
-                <p><strong>Kimler için uygun?</strong></p>
-                <ul>
-                    <li>Boksu sıfırdan, sağlam temelle öğrenmek isteyenler</li>
-                    <li>Mevcut bilgisini profesyonel seviyeye taşımak isteyen sporcular</li>
-                    <li>Antrenörlük vizyonunu geliştirmek isteyen sporcu ve antrenör adayları</li>
-                    <li>Disiplinli, sistemli ve bilimsel yaklaşım arayan herkes</li>
-                </ul>
-            </div>
-
-            <div class="training-highlight-box reveal">
-                <h4>Öne Çıkan Özellikler</h4>
-                <ul>
-                    <li>Her sporcu için <strong>kişiye özel programlama</strong></li>
-                    <li>Hataların anında tespiti ve düzeltici egzersizlerle kalıcı öğrenme</li>
-                    <li>Grup antrenmanlarında disiplin ve motivasyon yönetimi</li>
-                    <li>Bire bir derslerde derin teknik analiz ve stil inşası</li>
-                    <li>Güvenli, kontrollü ve bilinçli antrenman ortamı</li>
-                </ul>
-
-                <div class="training-cta">
-                    <!-- Bu linkleri kendi iletişim bilgilerinle değiştir -->
-                    <a href="#" title="WhatsApp ile İletişim">
-                        <i class="fab fa-whatsapp"></i> WhatsApp ile Randevu
-                    </a>
-                    <a href="#contact">
-                        <i class="fas fa-envelope"></i> İletişim Formu / Mail
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Reviews Section -->
-    <section class="section reviews-section" id="reviews">
-        <div class="section-header reveal">
-            <p class="section-subtitle">Görüşler</p>
-            <h2 class="section-title">Sporcular ve Okuyucular <span>Ne Diyor?</span></h2>
-        </div>
-
-        <div class="reviews-slider reveal">
-            <div class="review-card">
-                <div class="review-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p class="review-text">
-                    “Spor salonunda yıllarca farklı antrenörlerle çalıştım. İlk kez birinin 
-                    bu kadar sistemli, açıklayıcı ve sabırlı olduğunu gördüm. 
-                    Hem kitabı hem bire bir dersleri, boksu kafamda tamamen oturttu.”
-                </p>
-                <p class="reviewer-name">Öğrenci Yorumu</p>
-                <p class="reviewer-title">Ankara • Özel Ders Sporcusu</p>
             </div>
         </div>
     </section>
@@ -1668,11 +1664,10 @@
         <div class="cta-content reveal">
             <h2 class="cta-title">Sıfırdan Ringe Çıkmaya Hazır mısınız?</h2>
             <p class="cta-text">
-                İster kitabı okuyarak sistemli boks eğitimine başlayın, ister Ankara’da bire bir antrenmanlarla
+                İster kitabı okuyarak sistemli boks eğitimine başlayın, ister Ankara'da bire bir antrenmanlarla
                 kendi stilinizi inşa edin. H. Serkan Emek ile çalışmak için hemen iletişime geçin.
             </p>
             <div class="cta-buttons">
-                <!-- Buradaki linkleri gerçek bağlantılarla değiştir -->
                 <a href="https://www.trendyol.com/mahlas-yayinlari/sifirdan-ringe-sistemli-boks-basucu-antrenoru-p-710589347" class="cta-btn">
                     <i class="fas fa-book-open"></i> Kitap Satın Alma Linki
                 </a>
@@ -1697,18 +1692,17 @@
                 <h4>Menü</h4>
                 <ul>
                     <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#training">Boks Dersleri</a></li>
                     <li><a href="#author">Serkan Emek</a></li>
                     <li><a href="#book">Kitap</a></li>
-                    <li><a href="#training">Boks Dersleri</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <h4>İletişim</h4>
                 <ul>
-                    <!-- Bunları kendi bilgilerinle değiştir -->
-                    <li><a href="mailto:ornek@mail.com">ankaraboksdersi@gmail.com</a></li>
-                    <li><a href="#">WhatsApp</a></li>
-                    <li><a href="https://www.instagram.com/h_serkan_emek/#">Instagram</a></li>
+                    <li><a href="mailto:ankaraboksdersi@gmail.com">h.serkanemek@ankaraboksdersi.fit</a></li>
+                    <li><a href="https://wa.me/905063806133" target="_blank">WhatsApp</a></li>
+                    <li><a href="https://www.instagram.com/h_serkan_emek/">Instagram</a></li>
                 </ul>
             </div>
             <div class="footer-links">
@@ -1720,7 +1714,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 H. Serkan Emek. Tüm hakları saklıdır.</p>
+            <p>&copy; 2026 H. Serkan Emek. Tüm hakları saklıdır.</p>
         </div>
     </footer>
 
@@ -1835,7 +1829,7 @@
                     const booksEl = document.getElementById('books');
 
                     if (citiesEl) animateCounter(citiesEl, 6);      // 6 şehir
-                    if (athletesEl) animateCounter(athletesEl, 300); // 300+ sporcu
+                    if (athletesEl) animateCounter(athletesEl, 1200); // 300+ sporcu
                     if (booksEl) animateCounter(booksEl, 1);        // 1 kitap
                 }
             });
@@ -1912,5 +1906,3 @@
     </script>
 </body>
 </html>
-
-<!--güncellendi-->
